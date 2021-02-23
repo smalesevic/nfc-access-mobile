@@ -15,10 +15,11 @@ import ActivityScreen from './src/screens/ActivityScreen';
 import TokenScreen from './src/screens/TokenScreen';
 import { Provider as AuthProvider } from './src/context/AuthContext';
 import { setNavigator } from './src/navigationRef';
-
+import ResolveAuthScreen from './src/screens/ResolveAuthScreen'
 
 const switchNavigator = createSwitchNavigator({
   // Authentication and Everything else separation 
+  ResolveAuth: ResolveAuthScreen,
   loginFlow: createStackNavigator({
     SignUp: SignUpScreen,
     SignIn: SignInScreen
