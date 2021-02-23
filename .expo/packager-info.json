@@ -2,7 +2,7 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19000,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "expoServerNgrokUrl": "https://66-dcu.anonymous.track.exp.direct",
+  "packagerNgrokUrl": "https://packager.66-dcu.anonymous.track.exp.direct",
+  "ngrokPid": 18938
 }

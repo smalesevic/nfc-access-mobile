@@ -14,6 +14,7 @@ import UserDetailScreen from './src/screens/UserDetailScreen';
 import ActivityScreen from './src/screens/ActivityScreen';
 import TokenScreen from './src/screens/TokenScreen';
 import { Provider as AuthProvider } from './src/context/AuthContext';
+import { setNavigator } from './src/navigationRef';
 
 
 const switchNavigator = createSwitchNavigator({
@@ -41,7 +42,10 @@ const App = createAppContainer(switchNavigator);
 export default () => {
   return (
     <AuthProvider>
-      <App />
+      <App 
+        ref={(navigator) => {
+          setNavigator(navigator);
+         }}/>
     </AuthProvider>
   );
 };
