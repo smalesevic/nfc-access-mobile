@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import { View, StyleSheet, Text, Button} from 'react-native';
 import { Card } from 'react-native-elements';
+import { FlatList } from 'react-native-gesture-handler';
 import { Context as AuthContext } from '../context/AuthContext';
 
 const PropertyScreen = ({ navigation }) => {
